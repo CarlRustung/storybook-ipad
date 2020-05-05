@@ -1,0 +1,656 @@
+{
+	"pages" : [
+		{
+			"pageNo" : 1,
+			"ixType" : "hotspots",
+			"illustration" : "robin-street",
+			"text" : "This story takes place in a sleepy, little town called Goldfinch. It all began in one of the houses on Robin Street.",
+			"choices" : [
+				{
+					"toPage" : 1.1,
+					"hotspot" : {
+						"illustration" : "spot-blue-house",
+						"xPos" : 50,
+						"yPos" : 50
+					},
+					"setFlag" : {
+						"key" : "selectedHouse",
+						"value" : "blue"
+					}
+				}
+			]
+		},
+
+		{
+			"pageNo" : 1.1,
+			"ixType" : "endPage",
+			"illustration" : "blue-house",
+			"text" : "The blue house was the oldest in Goldfinch. It creaked in the wind as if saying hello to everyone passing by. Though it was starting to show its age, it was well taken care of by the people who lived there."
+		},
+
+		{
+			"pageNo" : 2,
+			"ixType" : "charSelect",
+			"illustration" : "Bea-Unknown",
+			"text" : "The first was a happy, young woman named Bea. This was the first apartment she’d rented all on her own. She was easy to recognize by both her looks and her hobby.",
+			"characterData" : {
+				"toPage" : 2.1,
+				"name" : "Bea",
+				"look" : {
+					"key" : "lookBea",
+					"values" : [ "Red", "Pink", "Green" ]
+				},
+				"interest" : {
+					"key" : "interestBea",
+					"values" : [ "Plants", "Dinos" ]
+				}
+			}
+		},
+
+		{
+			"pageNo" : 2.1,
+			"ixType" : "charDesc",
+			"forCharacter" : "Bea",
+			"descriptions" : {
+				"lookFlag" : "lookBea",
+				"interestFlag" : "interestBea",
+				"values" : [
+					{
+						"look" : "Red",
+						"redirects" : [
+							{
+								"interest" : "Plants",
+								"toPage" : 2.11
+							},
+							{
+								"interest" : "Dinos",
+								"toPage" : 2.12
+							}
+						]
+					},
+					{
+						"look" : "Pink",
+						"redirects" : [
+							{
+								"interest" : "Plants",
+								"toPage" : 2.13
+							},
+							{
+								"interest" : "Dinos",
+								"toPage" : 2.14
+							}
+						]
+					},
+					{
+						"look" : "Green",
+						"redirects" : [
+							{
+								"interest" : "Plants",
+								"toPage" : 2.15
+							},
+							{
+								"interest" : "Dinos",
+								"toPage" : 2.16
+							}
+						]
+					}
+				]
+			}
+		},
+
+		{
+			"pageNo" : 2.11,
+			"ixType" : "endPage",
+			"illustration" : "About-Bea-Red-Plants",
+			"text" : "The first thing you noticed about her, apart from her chestnut hair and big, round glasses, was her enthusiasm for plants of all sorts."
+		},
+
+		{
+			"pageNo" : 2.12,
+			"ixType" : "endPage",
+			"illustration" : "About-Bea-Red-Dinos",
+			"text" : "She was so enthusiastic about dinosaurs that she’d often start talking about them to people, completely forgetting to say hello first."
+		},
+
+		{
+			"pageNo" : 2.13,
+			"ixType" : "endPage",
+			"illustration" : "About-Bea-Pink-Plants",
+			"text" : "Some of the older people in Goldfinch though she looked a bit ditzy at first, but she soon impressed them with her expansive knowledge about flowers."
+		},
+
+		{
+			"pageNo" : 2.14,
+			"ixType" : "endPage",
+			"illustration" : "About-Bea-Pink-Dinos",
+			"text" : "She had gotten a job as a science teacher down at the elementary school, and her speciality was dinosaurs."
+		},
+
+		{
+			"pageNo" : 2.15,
+			"ixType" : "endPage",
+			"illustration" : "About-Bea-Green-Plants",
+			"text" : "Bea had moved to Goldfinch to work as a nature guide and guardian of the nearby woods."
+		},
+
+		{
+			"pageNo" : 2.16,
+			"ixType" : "endPage",
+			"illustration" : "About-Bea-Green-Dinos",
+			"text" : "She had moved to Goldfinch because there were plenty of work there for a young paleontologist, with plenty of fossils being uncovered in the nearby area."
+		},
+
+		{
+			"pageNo" : 3,
+			"ixType" : "charSelect",
+			"text" : "The second tenant was a man called Niels. He mostly kept to himself, engrossed in his hobbies.",
+			"characterData" : {
+				"toPage" : 3.1,
+				"name" : "Niels",
+				"look" : {
+					"key" : "lookNiels",
+					"values" : [ "Dweller", "Trekkie", "Curly" ]
+				},
+				"interest" : {
+					"key" : "interestNiels",
+					"values" : [ "Drones", "Computers" ]
+				}
+			}
+		},
+
+		{
+			"pageNo" : 3.1,
+			"ixType" : "charDesc",
+			"forCharacter" : "Niels",
+			"descriptions" : {
+				"lookFlag" : "lookNiels",
+				"interestFlag" : "interestNiels",
+				"values" : [
+					{
+						"look" : "Dweller",
+						"redirects" : [
+							{
+								"interest" : "Drones",
+								"toPage" : 3.11
+							},
+							{
+								"interest" : "Computers",
+								"toPage" : 3.12
+							}
+						]
+					},
+					{
+						"look" : "Trekkie",
+						"redirects" : [
+							{
+								"interest" : "Drones",
+								"toPage" : 3.13
+							},
+							{
+								"interest" : "Computers",
+								"toPage" : 3.14
+							}
+						]
+					},
+					{
+						"look" : "Curly",
+						"redirects" : [
+							{
+								"interest" : "Drones",
+								"toPage" : 3.15
+							},
+							{
+								"interest" : "Computers",
+								"toPage" : 3.16
+							}
+						]
+					}
+				]
+			}
+		},
+
+		{
+			"pageNo" : 3.11,
+			"ixType" : "endPage",
+			"illustration" : "About-Niels-Dweller-Drones",
+			"text" : "Niels was a big fan of robots and drones."
+		},
+
+		{
+			"pageNo" : 3.12,
+			"ixType" : "endPage",
+			"illustration" : "About-Niels-Dweller-Computers",
+			"text" : "Niels was busy with his computers, which he used to make all sorts of crazy apps."
+		},
+
+		{
+			"pageNo" : 3.13,
+			"ixType" : "endPage",
+			"illustration" : "About-Niels-Trekkie-Drones",
+			"text" : "He was an avid science fiction fan, and spent a lot of his time tinkering with robots, drones and other radio controlled gadgets."
+		},
+
+		{
+			"pageNo" : 3.14,
+			"ixType" : "endPage",
+			"illustration" : "About-Niels-Trekkie-Computers",
+			"text" : "Niels spent a lot of time tinkering with his many computers, making sci-fi-themed games and websites."
+		},
+
+		{
+			"pageNo" : 3.15,
+			"ixType" : "endPage",
+			"illustration" : "About-Niels-Curly-Drones",
+			"text" : "You could recognize Niels all the way from the other side of town, his golden perm was a dead giveaway. He would probably see you first, though, using one of his camera drones."
+		},
+
+		{
+			"pageNo" : 3.16,
+			"ixType" : "endPage",
+			"illustration" : "About-Niels-Curly-Computers",
+			"text" : "Niels and his golden perm would be easy to spot if he ever went outside, but he spent most of his time inside with his computers. Nobody knew exactly what he was up to, but he said he was programming something important."
+		},
+
+		{
+			"pageNo" : 4,
+			"ixType" : "charSelect",
+			"text" : "The owner of the house was an old lady they called Esme. Bea and Niels guessed her full name Esmeralda, but they’d never asked. Esme had lived on Robin street since she was a little girl.",
+			"characterData" : {
+				"toPage" : 4.1,
+				"name" : "Esme",
+				"look" : {
+					"key" : "lookEsme",
+					"values" : [ "Gran", "Gruff", "Witch" ]
+				},
+				"interest" : {
+					"key" : "interestEsme",
+					"values" : [ "Knitting", "Spying" ]
+				}
+			}
+		},
+
+		{
+			"pageNo" : 4.1,
+			"ixType" : "charDesc",
+			"forCharacter" : "Esme",
+			"descriptions" : {
+				"lookFlag" : "lookEsme",
+				"interestFlag" : "interestEsme",
+				"values" : [
+					{
+						"look" : "Gran",
+						"redirects" : [
+							{
+								"interest" : "Knitting",
+								"toPage" : 4.11
+							},
+							{
+								"interest" : "Spying",
+								"toPage" : 4.12
+							}
+						]
+					},
+					{
+						"look" : "Gruff",
+						"redirects" : [
+							{
+								"interest" : "Knitting",
+								"toPage" : 4.13
+							},
+							{
+								"interest" : "Spying",
+								"toPage" : 4.14
+							}
+						]
+					},
+					{
+						"look" : "Witch",
+						"redirects" : [
+							{
+								"interest" : "Knitting",
+								"toPage" : 4.15
+							},
+							{
+								"interest" : "Spying",
+								"toPage" : 4.16
+							}
+						]
+					}
+				]
+			}
+		},
+
+		{
+			"pageNo" : 4.11,
+			"ixType" : "endPage",
+			"illustration" : "About-Esme-Gran-Knitting",
+			"text" : "Esme was a sweet old lady who loved knitting more than anything."
+		},
+
+		{
+			"pageNo" : 4.12,
+			"ixType" : "endPage",
+			"illustration" : "About-Esme-Gran-Spying",
+			"text" : "Esme looked like a sweet old granny, but she was notorious for snooping on almost anyone and anything."
+		},
+
+		{
+			"pageNo" : 4.13,
+			"ixType" : "endPage",
+			"illustration" : "About-Esme-Gruff-Knitting",
+			"text" : "Esme was a tough old broad, but her favorite hobby was knitting."
+		},
+
+		{
+			"pageNo" : 4.14,
+			"ixType" : "endPage",
+			"illustration" : "About-Esme-Gruff-Spying",
+			"text" : "Esme had spent a lifetime working with surveillance, and old habits are hard to break. There wasn’t a thing going on in Goldfinch that she didn’t know about within an hour."
+		},
+
+		{
+			"pageNo" : 4.15,
+			"ixType" : "endPage",
+			"illustration" : "About-Esme-Witch-Knitting",
+			"text" : "Had she lived in a cottage in the woods, the people of Goldfinch would think she was a witch. Some people still believed she had mystical powers, but she was mostly concerned with knitting."
+		},
+
+		{
+			"pageNo" : 4.16,
+			"ixType" : "endPage",
+			"illustration" : "About-Esme-Witch-Spying",
+			"text" : "Esme loved to make people believe she had mystical powers, but truth is she was no more witch than you or me. She entertained and impressed people by looking into her crystal ball, but her secret was her hidden cameras. They were everywhere in Goldfinch."
+		},
+
+		{
+			"pageNo" : 5,
+			"ixType" : "tripletSelector",
+			"illustration" : "blue-house-floors",
+			"text" : "The blue house had three floors, not counting the basement. Bea, Niels and Esme lived on one floor each.",
+			"movables" : [ "Bea", "Niels", "Esme" ],
+			"setFlags" : [ "topFloorOccupant", "midFloorOccupant", "firstFloorOccupant" ],
+			"toPage" : 5.1
+		},
+
+		{
+			"pageNo" : 5.1,
+			"ixType" : "flagRedirect",
+			"checkFlagKey" : "topFloorOccupant",
+			"redirectByFlag" : [
+				{
+					"flagValue" : "Bea",
+					"redirectFlagKey" : "interestBea",
+					"redirect" : [
+						{
+							"flagValue" : "Plants",
+							"toPage" : 5.11
+						},
+						{
+							"flagValue" : "Dinos",
+							"toPage" : 5.12
+						}
+					]
+				},
+				{
+					"flagValue" : "Niels",
+					"redirectFlagKey" : "interestNiels",
+					"redirect" : [
+						{
+							"flagValue" : "Drones",
+							"toPage" : 5.13
+						},
+						{
+							"flagValue" : "Computers",
+							"toPage" : 5.14
+						}
+					]
+				},
+				{
+					"flagValue" : "Esme",
+					"redirectFlagKey" : "interestEsme",
+					"redirect" : [
+						{
+							"flagValue" : "Knitting",
+							"toPage" : 5.15
+						},
+						{
+							"flagValue" : "Spying",
+							"toPage" : 5.16
+						}
+					]
+				}
+			]
+		},
+
+		{
+			"pageNo" : 5.11,
+			"ixType" : "paragraph",
+			"illustration" : "loft-greenhouse",
+			"text" : "All the way on the top lived Bea. She had a lot of plants up there."
+		},
+
+		{
+			"pageNo" : 5.12,
+			"ixType" : "paragraph",
+			"illustration" : "dino-atelier",
+			"text" : "All the way on the top lived Bea. Bea and all her dinosaurs."
+		},
+
+		{
+			"pageNo" : 5.13,
+			"ixType" : "paragraph",
+			"illustration" : "drone-hangar",
+			"text" : "All the way on the top lived Niels. He had repurposed the attic into a hangar for his drones."
+		},
+
+		{
+			"pageNo" : 5.14,
+			"ixType" : "paragraph",
+			"illustration" : "computer-attic",
+			"text" : "All the way on the top lived Niels. There was computer gadgets everywhere."
+		},
+
+		{
+			"pageNo" : 5.15,
+			"ixType" : "paragraph",
+			"illustration" : "knitting-studio",
+			"text" : "All the way on the top lived Esme. She had knitted a lot of things up there."
+		},
+
+		{
+			"pageNo" : 5.16,
+			"ixType" : "paragraph",
+			"illustration" : "radar-dome",
+			"text" : "All the way on the top lived Esme. She had built her own radar dome up there, to spy on everyone in Goldfinch."
+		},
+
+		{
+			"pageNo" : 6,
+			"ixType" : "flagRedirect",
+			"checkFlagKey" : "midFloorOccupant",
+			"redirectByFlag" : [
+				{
+					"flagValue" : "Bea",
+					"redirectFlagKey" : "interestBea",
+					"redirect" : [
+						{
+							"flagValue" : "Plants",
+							"toPage" : 6.1
+						},
+						{
+							"flagValue" : "Dinos",
+							"toPage" : 6.2
+						}
+					]
+				},
+				{
+					"flagValue" : "Niels",
+					"redirectFlagKey" : "interestNiels",
+					"redirect" : [
+						{
+							"flagValue" : "Drones",
+							"toPage" : 6.3
+						},
+						{
+							"flagValue" : "Computers",
+							"toPage" : 6.4
+						}
+					]
+				},
+				{
+					"flagValue" : "Esme",
+					"redirectFlagKey" : "interestEsme",
+					"redirect" : [
+						{
+							"flagValue" : "Knitting",
+							"toPage" : 6.5
+						},
+						{
+							"flagValue" : "Spying",
+							"toPage" : 6.6
+						}
+					]
+				}
+			]
+		},
+
+		{
+			"pageNo" : 6.1,
+			"ixType" : "paragraph",
+			"illustration" : "plant-flat",
+			"text" : "Bea and her plants lived in the middle."
+		},
+
+		{
+			"pageNo" : 6.2,
+			"ixType" : "paragraph",
+			"illustration" : "dino-flat",
+			"text" : "Bea and her dinosaurs lived on the middle floor."
+		},
+
+		{
+			"pageNo" : 6.3,
+			"ixType" : "paragraph",
+			"illustration" : "drone-flat",
+			"text" : "Niels lived in the middle, it was easy to see when you noticed the drones coming and going through the windows."
+		},
+
+		{
+			"pageNo" : 6.4,
+			"ixType" : "paragraph",
+			"illustration" : "computer-flat",
+			"text" : "Niels lived in the middle. He could barely see out because the windows were blocked by computers."
+		},
+
+		{
+			"pageNo" : 6.5,
+			"ixType" : "paragraph",
+			"illustration" : "knitting-flat",
+			"text" : "Esme lived in the middle. She had knitted her own curtains."
+		},
+
+		{
+			"pageNo" : 6.6,
+			"ixType" : "paragraph",
+			"illustration" : "spy-flat",
+			"text" : "Esme lived in the middle. This let her listen to everything that was going on in the flats above and below."
+		},
+
+		{
+			"pageNo" : 7,
+			"ixType" : "flagRedirect",
+			"checkFlagKey" : "firstFloorOccupant",
+			"redirectByFlag" : [
+				{
+					"flagValue" : "Bea",
+					"redirectFlagKey" : "interestBea",
+					"redirect" : [
+						{
+							"flagValue" : "Plants",
+							"toPage" : 7.1
+						},
+						{
+							"flagValue" : "Dinos",
+							"toPage" : 7.2
+						}
+					]
+				},
+				{
+					"flagValue" : "Niels",
+					"redirectFlagKey" : "interestNiels",
+					"redirect" : [
+						{
+							"flagValue" : "Drones",
+							"toPage" : 7.3
+						},
+						{
+							"flagValue" : "Computers",
+							"toPage" : 7.4
+						}
+					]
+				},
+				{
+					"flagValue" : "Esme",
+					"redirectFlagKey" : "interestEsme",
+					"redirect" : [
+						{
+							"flagValue" : "Knitting",
+							"toPage" : 7.5
+						},
+						{
+							"flagValue" : "Spying",
+							"toPage" : 7.6
+						}
+					]
+				}
+			]
+		},
+
+		{
+			"pageNo" : 7.1,
+			"ixType" : "endPage",
+			"illustration" : "inside-garden",
+			"text" : "The first floor was occupied by Bea. She had extended the garden well into the living room."
+		},
+
+		{
+			"pageNo" : 7.2,
+			"ixType" : "endPage",
+			"illustration" : "dino-floor",
+			"text" : "The first floor was occupied by Bea. She had trimmed some of the garden bushes to look like dinosaurs."
+		},
+
+		{
+			"pageNo" : 7.3,
+			"ixType" : "endPage",
+			"illustration" : "robot-garage",
+			"text" : "The first floor was occupied by Niels. He used some of the space as a robot garage."
+		},
+
+		{
+			"pageNo" : 7.4,
+			"ixType" : "endPage",
+			"illustration" : "computer-shop",
+			"text" : "The first floor was occupied by Niels’ computer shop."
+		},
+
+		{
+			"pageNo" : 7.5,
+			"ixType" : "endPage",
+			"illustration" : "knitting-home",
+			"text" : "The first floor was occupied by Esme. She could usually be spotted knitting out on the front porch."
+		},
+
+		{
+			"pageNo" : 7.6,
+			"ixType" : "endPage",
+			"illustration" : "control-center",
+			"text" : "The first floor was occupied by Esme and her secret “control center”, where she could watch what was going on in the entire house."
+		},
+
+		{
+			"pageNo" : 8,
+			"ixType" : "endScene"
+		}
+	]
+}
